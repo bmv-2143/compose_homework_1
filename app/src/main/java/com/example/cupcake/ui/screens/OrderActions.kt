@@ -2,7 +2,7 @@ package com.example.cupcake.ui.screens
 
 import com.example.cupcake.model.OrderViewModel
 
-fun cancelOrder(
+internal fun cancelOrder(
     sharedViewModel: OrderViewModel,
     onNavigateToStart: () -> Unit
 ): () -> Unit = {

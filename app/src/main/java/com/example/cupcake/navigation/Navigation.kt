@@ -1,4 +1,4 @@
-package com.example.cupcake
+package com.example.cupcake.navigation
 
 import android.util.Log
 import androidx.compose.runtime.Composable
@@ -109,9 +109,6 @@ private fun navigateToFlavorScreen(navController: NavHostController): () -> Unit
 }
 
 private fun navigateToStartScreen(navController: NavHostController): () -> Unit = {
-//    navController.navigate(StartDestination) {
-//        popUpTo(StartDestination) { inclusive = true }
-//    }
     navController.popBackStack(StartDestination, inclusive = false)
 }
 

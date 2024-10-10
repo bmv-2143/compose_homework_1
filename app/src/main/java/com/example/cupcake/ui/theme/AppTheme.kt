@@ -47,14 +47,6 @@ val ColorScheme.onTopAppBarContainer: Color
     get() = Color.White
 
 
-/* Other default colors to override
-onTertiary = Color.White,
-background = Color(0xFFFFFBFE),
-onBackground = Color(0xFF1C1B1F),
-surface = Color(0xFFFFFBFE),
-onSurface = Color(0xFF1C1B1F),
-*/
-
 @Composable
 fun CupcakeTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
@@ -69,7 +61,7 @@ fun CupcakeTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = AppTypography,
         content = content
     )
 }
@@ -107,10 +99,6 @@ private fun setStatusBarAppearance(activity: Activity, color: Color, view: View)
 }
 
 object WhiteTintRippleTheme : RippleTheme {
-    // Here you should return the ripple color you want
-    // and not use the defaultRippleColor extension on RippleTheme.
-    // Using that will override the ripple color set in DarkMode
-    // or when you set light parameter to false
     @Composable
     override fun defaultColor(): Color = Color.White
 

@@ -67,15 +67,6 @@ val slideOutLeftToRightFullWidth:
         )
     }
 
-val slideOutBottomToTopFullHeight:
-        AnimatedContentTransitionScope<NavBackStackEntry>.() -> ExitTransition =
-    {
-        slideOutVertically(
-            targetOffsetY = { fullHeight -> -fullHeight },
-            animationSpec = tween(TWEEN_TIME_MS)
-        )
-    }
-
 val slideOutTopToBottomFullHeight:
         AnimatedContentTransitionScope<NavBackStackEntry>.() -> ExitTransition =
     {

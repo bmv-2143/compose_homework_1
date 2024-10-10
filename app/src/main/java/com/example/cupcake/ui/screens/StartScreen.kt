@@ -94,7 +94,7 @@ private fun OrderCupcakeButtons(sharedViewModel: OrderViewModel, onNavigateToFla
 }
 
 @Composable
-fun CupcakeImage(modifier: Modifier = Modifier) {
+private fun CupcakeImage(modifier: Modifier = Modifier) {
     Image(
         painter = painterResource(id = R.drawable.cupcake),
         contentDescription = "Cupcake",
@@ -107,7 +107,7 @@ fun CupcakeImage(modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun OrderCupcakesText(modifier: Modifier = Modifier) {
+private fun OrderCupcakesText(modifier: Modifier = Modifier) {
     Text(
         text = stringResource(id = R.string.order_cupcakes),
         fontFamily = FontFamily.SansSerif,
@@ -120,7 +120,7 @@ fun OrderCupcakesText(modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun StartScreenLightPreview() {
+private fun StartScreenLightPreview() {
     CupcakeTheme(darkTheme = false) {
         StartScreen(sharedViewModel = OrderViewModel(), onNavigateToFlavorScreen = {})
     }
@@ -128,7 +128,7 @@ fun StartScreenLightPreview() {
 
 @Preview(showBackground = true)
 @Composable
-fun StartScreenDarkPreview() {
+private fun StartScreenDarkPreview() {
     CupcakeTheme(darkTheme = true) {
         StartScreen(sharedViewModel = OrderViewModel(), onNavigateToFlavorScreen = {})
     }

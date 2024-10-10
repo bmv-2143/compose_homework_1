@@ -54,7 +54,7 @@ fun PickupScreen(
 }
 
 @Composable
-fun PickupScreenContent(
+private fun PickupScreenContent(
     sharedViewModel: OrderViewModel,
     onNavigateNext: () -> Unit,
     onNavigateToStart: () -> Unit,
